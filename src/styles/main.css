@@ -1,0 +1,76 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;/* Assuming you want to center within the whole viewport */
+  height: 60vh;
+  overflow: auto; /* Add a scrollbar when content overflows */ 
+  overflow-y: scroll;
+}
+
+.centered-div {
+  width: 50%;  /* Or whatever width you want */
+  height: 90%; /* Or whatever height you want */
+}
+
+.profile-image {
+    text-align: center;
+  }
+  
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    margin-top: 20px;
+    background-color: #707070;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+        position: relative;
+        margin: 0;
+        height: 100vh; /* Just for demo purposes */
+        overflow: auto; /* Just for demo purposes */
+        }
+  
+  body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: url('../media/bg.webp') no-repeat center center/cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 0.15; /* This sets the opacity to 10% */
+            z-index: -1; /* This ensures the background stays behind the content */
+        }
+
+        .navImage img {
+          width: 1550px; /* Example width for the img */
+          height: 110px; /* Example height for the img */
+        }
+
+        .navvImage img {
+          width: 1550px; /* Example width for the img */
+          height: 80px; /* Example height for the img */
+        }
